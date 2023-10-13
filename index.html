@@ -27,14 +27,14 @@
     }
 
     /* Header/logo Title */
-   .header {
-  padding: 80px;
-  text-align: center;
-  background: url('amsterdam-centrum-white-small.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-position: center center 
-  color: black; /* Adjust text color for better visibility on the image */
-}
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: url('amsterdam-centrum-white-small.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-position: center center;
+      color: black; /* Adjust text color for better visibility on the image */
+    }
 
     /* Increase the font size of the heading */
     .header h1 {
@@ -45,6 +45,7 @@
     .navbar {
       display: flex;
       align-items: center;
+      justify-content: flex-end; /* Align to the right */
       margin-top: 20px;
       padding: 10px 0;
     }
@@ -71,15 +72,18 @@
       font-weight: bold;
     }
 
-    /* Right-aligned link */
-    .navbar a.right {
-      margin-left: auto;
-    }
-
     /* Change color on hover */
     .navbar a:hover {
       background-color: #ddd;
       color: black;
+    }
+
+    /* Add styles for the "Home" circle */
+    .home-circle {
+      width: 60px;
+      height: 60px;
+      line-height: 60px; /* Center text vertically */
+      text-align: center;
     }
 
     /* Column container */
@@ -150,7 +154,7 @@
     <a href="#"><div>1</div></a>
     <a href="#"><div>2</div></a>
     <a href="#"><div>3</div></a>
-    <a href="#"><div style="width: 60px; height: 60px;">Home</div></a>
+    <a href="#"><div class="home-circle">Home</div></a>
   </div>
 
   <div class="row">
@@ -177,6 +181,7 @@
 </div>
 </body>
 </html>
+
 
 
 

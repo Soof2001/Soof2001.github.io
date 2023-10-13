@@ -105,6 +105,10 @@
       flex: 30%;
       background-color: #f1f1f1;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     /* Main column */
@@ -118,8 +122,13 @@
     /* Fake image, just for this example */
     .fakeimg {
       background-color: #aaa;
-      width: 100%;
-      padding: 20px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     /* Footer */
@@ -164,21 +173,19 @@
   <div class="row">
     <div class="side">
       <h2>Team</h2>
-    <div class="fakeimg" style="height:60px;">
-  <img src="1645012811205.jpg" alt="Image 1" style="width: 60px; height: 60px;">
-</div>
-<p>Abbe Hekkert</p>
-<div class="fakeimg" style="height:60px;">
-  <img src="1696358950536.jpg" alt="Image 2" style="width: 60px; height: 60px;">
-</div>
-<p>Emily van Dijk</p>
-<div class="fakeimg" style="height:60px;">
-  <img src="WhatsApp Image 2023-10-13 at 19.48.59.jpeg" alt="Image 3" style="width: 60px; height: 60px;">
-</div>
-<p>Sofia Rahman</p>
-
-</div>
-<br>
+      <div class="fakeimg">
+        <img src="1645012811205.jpg" alt="Abbe Hekkert" style="width: 60px; height: 60px;">
+        <p>Abbe Hekkert</p>
+      </div>
+      <div class="fakeimg">
+        <img src="1696358950536.jpg" alt="Emily van Dijk" style="width: 60px; height: 60px;">
+        <p>Emily van Dijk</p>
+      </div>
+      <div class="fakeimg">
+        <img src="WhatsApp Image 2023-10-13 at 19.48.59.jpeg" alt="Sofia Rahman" style="width: 60px; height: 60px;">
+        <p>Sofia Rahman</p>
+      </div>
+    </div>
 
     <div class="main">
       <h2>INTRODUCTION</h2>
@@ -194,6 +201,7 @@
 </div>
 </body>
 </html>
+
 
 
 

@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ASSIGNMENT 4</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: white;
+    }
+
+    /* Center the page content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px; /* Add padding to create space on the left and right */
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header/logo Title */
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: url('Schermafbeelding 2023-10-13 174948.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-position: center center;
+      color: black; /* Adjust text color for better visibility on the image */
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* Style the top navigation bar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; /* Align to the right */
+      margin-top: 20px;
+      padding: 10px 0;
+    }
+
+    /* Add a new class to style the "Assignments:" text */
+    .assignment-text {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* Style the navigation bar links (circles) */
+    .navbar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      border-radius: 50%;
+      background-color: #888;
+      width: 60px;
+      height: 60px;
+      font-weight: bold;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add styles for the "Home" circle */
+    .home-circle {
+      width: 60px;
+      height: 60px;
+      line-height: 60px; /* Center text vertically */
+      text-align: center;
+    }
+
+    /* Move the "Assignments:" text to the right */
+    .assignment-text {
+      margin-left: auto;
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sit next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%;
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    /* Main column */
+    .main {
+      -ms-flex: 70%;
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Fake image, just for this example */
+    .fakeimg {
+      background-color: #aaa;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>ASSIGNMENT 4</h1>
+    <p>week 1.5 – 2023/24</p>
+  </div>
+
+  <div class="navbar">
+    <div class="assignment-text">Assignments:</div>
+    <a href="Assignment1.html"><div>1</div></a>
+    <a href="Assignment2.html"><div>2</div></a>
+    <a href="Assignment3.html"><div>3</div></a>
+    <a href="Assignment4.html"><div>4</div></a>
+    <a href="index.html"><div class="home-circle">Home</div></a>
+  </div>
+
+    <div class="main">
+      <h2>INTRODUCTION</h2>
+      <h5>Amsterdam as host of the Paralympics</h5>
+      <p>Paris is hosting the Paralympics in 2024. One of the events at the Paralympics is an open water swimming event in the Seine (apparently the water is clean or so the French say). Since the City of Amsterdam thinks it is better than Paris, they want to host an event before the Paralympics, snubbing the Parisians. The idea is to host a 5km open water swimming event through the canals of Amsterdam. You are asked by the municipality of Amsterdam to advise on the feasibility of the event from the perspective of the safety of the partaking athletes from an environmental perspective. The event is going to be hosted in May. Different assignments are made to answer specific questions about the Paralympics that are going to be held.</p>
+      <br>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Made by Abbe, Emily & Sofia</h2>
+  </div>
+</div>
+</body>
+</html>

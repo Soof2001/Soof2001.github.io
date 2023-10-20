@@ -185,7 +185,19 @@
       <img src=Grafiek1.png>
       <h4>Cross-reference data Airbnb dataset and BBGA data</h4>
       <p>We created a cross reference between the data from the InsideAirbnb (2023) dataset and the Basis Bestand Gebieden Amsterdam (BBGA) dataset from Gemeente Amsterdam (2023). The BBGA dataset contains key figures at the level of the most commonly used area divisions in Amsterdam such as neighbourhoods, shopping and working areas. We have downloaded the data set as a XLSX file. Our trajectory to creating the map with plotted Airbnb locations per neighbourhood can be found in our workbook Assignment3_WB. The result of this plot is the following: </p>
-      <img scr=Grafiek2.jpg>
+      <img scr=grk_JPG.jpg>
+      <p>The BBGA dataset is in dark blue, whereas the Airbnb dataset is in red. Unfortunately, we did not manage to create a proper legend next to the plot.</p>
+      <p>Presumably, the higher results in the BBGA dataset can be attributed to its continuous data accumulation over the course of the year, resulting in an annual cumulative representation. In contrast, the Airbnb dataset constitutes a temporal snapshot, reflective of the platform’s status at the time of the data retrieval. Consequently, it may omit listings present in the BBGA dataset due to their removal from the Airbnb platform subsequent to the data collection point.</p>
+      <h4>Airbnb apartments used for housing</h4>
+      <p>To determine whether or not an Airbnb is also used as a normal house, we have logically assumed that if an Airbnb is used for more than 200 days as an Airbnb location, it is not used as a normal house. Our code can be found in the Assignment3_WB. From our Jupyter notebook script we can conclude that 6760 Airbnb’s are not rented out all the time but are also used as normal housing, and 1626 are not used as housing. </p>
+      <h4>Licenses</h4>
+      <p>To know how many different licenses are used for Airbnb, we used again the listings.cvs file. As seen in our Assignment3_WB, we filtered the licenses dataframe, grouped the different licenses and afterwards, used the count function to determine the amount. This resulted in 7288 different licenses issued. </p>
+      <h4>References</h4>
+      <p>Amsterdam. (2023, October 15). Tourist tax (toeristenbelasting). English Site. https://www.amsterdam.nl/en/municipal-taxes/tourist-tax-(toeristenbelasting)/</p>
+      <p>Amsterdam & Gemeente Amsterdam. (2023, October 20). Toeristenbelasting. Amsterdam.nl. https://www.amsterdam.nl/veelgevraagd/toeristenbelasting-2c7c2#
+</p>
+      <p>Gemeente Amsterdam. (2020). Data en informatie. https://data.amsterdam.nl/datasets/rl6-35tFAw2Ljw/basisbestand-gebieden-amsterdam-bbga/</p>
+      <p>Inside Airbnb. (2023). Get the Data. http://insideairbnb.com/get-the-data/</p>
       <br>
     </div>
   </div>
